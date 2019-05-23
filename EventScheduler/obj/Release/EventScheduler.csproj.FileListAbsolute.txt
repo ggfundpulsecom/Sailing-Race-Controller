@@ -1,0 +1,4 @@
+C:\Projects\MarconiRaceController\EventScheduler\bin\Release\EventScheduler.dll
+C:\Projects\MarconiRaceController\EventScheduler\obj\Release\EventScheduler.SchedulerUI.resources
+C:\Projects\MarconiRaceController\EventScheduler\obj\Release\EventScheduler.csproj.GenerateResource.Cache
+C:\Projects\MarconiRaceController\EventScheduler\obj\Release\EventScheduler.dll

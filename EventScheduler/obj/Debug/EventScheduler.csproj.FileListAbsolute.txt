@@ -1,0 +1,7 @@
+C:\Projects\MarconiRaceController\EventScheduler\bin\Debug\EventScheduler.dll
+C:\Projects\MarconiRaceController\EventScheduler\bin\Debug\EventScheduler.pdb
+C:\Projects\MarconiRaceController\EventScheduler\obj\Debug\EventScheduler.csprojResolveAssemblyReference.cache
+C:\Projects\MarconiRaceController\EventScheduler\obj\Debug\EventScheduler.SchedulerUI.resources
+C:\Projects\MarconiRaceController\EventScheduler\obj\Debug\EventScheduler.csproj.GenerateResource.Cache
+C:\Projects\MarconiRaceController\EventScheduler\obj\Debug\EventScheduler.dll
+C:\Projects\MarconiRaceController\EventScheduler\obj\Debug\EventScheduler.pdb

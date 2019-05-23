@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventScheduler", "EventScheduler.csproj", "{F958A14E-EDA9-43DE-9270-2C5421CBFC41}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSchedulerTest", "..\EventSchedulerTest\EventSchedulerTest.csproj", "{4989CF19-8550-4344-BCBF-CAC3EAF3106E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F958A14E-EDA9-43DE-9270-2C5421CBFC41}.Debug.ActiveCfg = Debug|.NET
+		{F958A14E-EDA9-43DE-9270-2C5421CBFC41}.Debug.Build.0 = Debug|.NET
+		{F958A14E-EDA9-43DE-9270-2C5421CBFC41}.Release.ActiveCfg = Release|.NET
+		{F958A14E-EDA9-43DE-9270-2C5421CBFC41}.Release.Build.0 = Release|.NET
+		{4989CF19-8550-4344-BCBF-CAC3EAF3106E}.Debug.ActiveCfg = Debug|.NET
+		{4989CF19-8550-4344-BCBF-CAC3EAF3106E}.Debug.Build.0 = Debug|.NET
+		{4989CF19-8550-4344-BCBF-CAC3EAF3106E}.Release.ActiveCfg = Release|.NET
+		{4989CF19-8550-4344-BCBF-CAC3EAF3106E}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
