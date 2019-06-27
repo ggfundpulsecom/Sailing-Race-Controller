@@ -113,15 +113,15 @@ namespace Marconi
             this.oblist.AllColumns.Add(olvFleetName);
             this.oblist.AllColumns.Add(this.olvElapsedTime);
             this.oblist.AllColumns.Add(this.olvCountDown);
+            this.oblist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.oblist.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Status,
             olvFleetName,
             this.olvElapsedTime,
             this.olvCountDown});
-            this.oblist.Dock = System.Windows.Forms.DockStyle.Fill;
             this.oblist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.oblist.FullRowSelect = true;
-            this.oblist.Location = new System.Drawing.Point(0, 0);
+            this.oblist.Location = new System.Drawing.Point(86, 0);
             this.oblist.Name = "oblist";
             this.oblist.Scrollable = false;
             this.oblist.Size = new System.Drawing.Size(1128, 469);
@@ -183,8 +183,7 @@ namespace Marconi
             // 
             // pict5minleft
             // 
-            this.pict5minleft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pict5minleft.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pict5minleft.Image = global::Marconi.Properties.Resources.race_off_light;
             this.pict5minleft.Location = new System.Drawing.Point(308, 9);
             this.pict5minleft.Name = "pict5minleft";
@@ -195,8 +194,7 @@ namespace Marconi
             // 
             // pict4minleft
             // 
-            this.pict4minleft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pict4minleft.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pict4minleft.Image = global::Marconi.Properties.Resources.race_off_light;
             this.pict4minleft.Location = new System.Drawing.Point(307, 76);
             this.pict4minleft.Name = "pict4minleft";
@@ -207,8 +205,7 @@ namespace Marconi
             // 
             // pict1minleft
             // 
-            this.pict1minleft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pict1minleft.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pict1minleft.Image = global::Marconi.Properties.Resources.race_off_light;
             this.pict1minleft.Location = new System.Drawing.Point(307, 143);
             this.pict1minleft.Name = "pict1minleft";
@@ -261,6 +258,7 @@ namespace Marconi
             this.btnIndividualRecall.TabIndex = 19;
             this.btnIndividualRecall.Text = "Turn Individual Recall ON";
             this.btnIndividualRecall.UseVisualStyleBackColor = true;
+            this.btnIndividualRecall.Visible = false;
             this.btnIndividualRecall.Click += new System.EventHandler(this.btnIndividualRecall_Click);
             // 
             // btGeneralRecall
@@ -273,15 +271,16 @@ namespace Marconi
             this.btGeneralRecall.TabIndex = 20;
             this.btGeneralRecall.Text = "Turn General Recall ON";
             this.btGeneralRecall.UseVisualStyleBackColor = true;
+            this.btGeneralRecall.Visible = false;
             this.btGeneralRecall.Click += new System.EventHandler(this.generalRecall_Click);
             // 
             // btntestlights
             // 
             this.btntestlights.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btntestlights.Location = new System.Drawing.Point(12, 956);
+            this.btntestlights.Location = new System.Drawing.Point(12, 1257);
             this.btntestlights.Name = "btntestlights";
-            this.btntestlights.Size = new System.Drawing.Size(4, 39);
+            this.btntestlights.Size = new System.Drawing.Size(90, 39);
             this.btntestlights.TabIndex = 21;
             this.btntestlights.Text = "Test Lights";
             this.btntestlights.UseVisualStyleBackColor = true;
@@ -289,22 +288,21 @@ namespace Marconi
             // 
             // btRaceComplete
             // 
-            this.btRaceComplete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btRaceComplete.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btRaceComplete.Enabled = false;
-            this.btRaceComplete.Location = new System.Drawing.Point(54, 22);
+            this.btRaceComplete.Location = new System.Drawing.Point(54, 136);
             this.btRaceComplete.Name = "btRaceComplete";
             this.btRaceComplete.Size = new System.Drawing.Size(108, 42);
             this.btRaceComplete.TabIndex = 23;
             this.btRaceComplete.Text = "Race Completed";
             this.btRaceComplete.UseVisualStyleBackColor = true;
+            this.btRaceComplete.Visible = false;
             // 
             // buttonDelayButton
             // 
-            this.buttonDelayButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDelayButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonDelayButton.Enabled = false;
-            this.buttonDelayButton.Location = new System.Drawing.Point(54, 85);
+            this.buttonDelayButton.Location = new System.Drawing.Point(54, 19);
             this.buttonDelayButton.Name = "buttonDelayButton";
             this.buttonDelayButton.Size = new System.Drawing.Size(108, 42);
             this.buttonDelayButton.TabIndex = 25;
@@ -319,20 +317,18 @@ namespace Marconi
             this.panelRaces.Controls.Add(this.oblist);
             this.panelRaces.Location = new System.Drawing.Point(120, 104);
             this.panelRaces.Name = "panelRaces";
-            this.panelRaces.Size = new System.Drawing.Size(1128, 469);
+            this.panelRaces.Size = new System.Drawing.Size(1214, 469);
             this.panelRaces.TabIndex = 26;
             // 
             // panelButtons
             // 
-            this.panelButtons.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelButtons.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelButtons.Controls.Add(this.buttonReset);
             this.panelButtons.Controls.Add(this.pictindividualrecall);
             this.panelButtons.Controls.Add(this.pictgeneralrecall);
             this.panelButtons.Controls.Add(this.btGeneralRecall);
             this.panelButtons.Controls.Add(this.btnIndividualRecall);
-            this.panelButtons.Location = new System.Drawing.Point(117, 579);
+            this.panelButtons.Location = new System.Drawing.Point(160, 579);
             this.panelButtons.Name = "panelButtons";
             this.panelButtons.Size = new System.Drawing.Size(436, 302);
             this.panelButtons.TabIndex = 27;
@@ -351,6 +347,7 @@ namespace Marconi
             // 
             // pictindividualrecall
             // 
+            this.pictindividualrecall.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictindividualrecall.Image = global::Marconi.Properties.Resources.race_off_light;
             this.pictindividualrecall.Location = new System.Drawing.Point(298, 17);
             this.pictindividualrecall.Name = "pictindividualrecall";
@@ -359,9 +356,11 @@ namespace Marconi
             this.pictindividualrecall.TabIndex = 23;
             this.pictindividualrecall.TabStop = false;
             this.pictindividualrecall.Tag = "Individual Recall";
+            this.pictindividualrecall.Visible = false;
             // 
             // pictgeneralrecall
             // 
+            this.pictgeneralrecall.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictgeneralrecall.Image = global::Marconi.Properties.Resources.race_off_light;
             this.pictgeneralrecall.Location = new System.Drawing.Point(298, 76);
             this.pictgeneralrecall.Name = "pictgeneralrecall";
@@ -370,6 +369,7 @@ namespace Marconi
             this.pictgeneralrecall.TabIndex = 22;
             this.pictgeneralrecall.TabStop = false;
             this.pictgeneralrecall.Tag = "General Recall";
+            this.pictgeneralrecall.Visible = false;
             // 
             // btStart
             // 
@@ -383,16 +383,14 @@ namespace Marconi
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.buttonundodelay);
             this.panel1.Controls.Add(this.buttonDelayButton);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btRaceComplete);
             this.panel1.Controls.Add(this.pict4minleft);
             this.panel1.Controls.Add(this.pict1minleft);
             this.panel1.Controls.Add(this.pict5minleft);
-            this.panel1.Location = new System.Drawing.Point(555, 579);
+            this.panel1.Location = new System.Drawing.Point(598, 579);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(617, 302);
             this.panel1.TabIndex = 31;
@@ -401,10 +399,9 @@ namespace Marconi
             // 
             // buttonundodelay
             // 
-            this.buttonundodelay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonundodelay.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonundodelay.Enabled = false;
-            this.buttonundodelay.Location = new System.Drawing.Point(54, 148);
+            this.buttonundodelay.Location = new System.Drawing.Point(54, 76);
             this.buttonundodelay.Name = "buttonundodelay";
             this.buttonundodelay.Size = new System.Drawing.Size(108, 42);
             this.buttonundodelay.TabIndex = 26;
@@ -415,7 +412,7 @@ namespace Marconi
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(191, 205);
+            this.label3.Location = new System.Drawing.Point(12, 294);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(157, 78);
             this.label3.TabIndex = 35;
@@ -456,8 +453,9 @@ namespace Marconi
             // 
             // lblVersion
             // 
+            this.lblVersion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblVersion.AutoSize = true;
-            this.lblVersion.Location = new System.Drawing.Point(965, 744);
+            this.lblVersion.Location = new System.Drawing.Point(1008, 895);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(35, 13);
             this.lblVersion.TabIndex = 36;
@@ -470,9 +468,10 @@ namespace Marconi
             this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1021, 774);
+            this.ClientSize = new System.Drawing.Size(1107, 874);
             this.Controls.Add(this.panelStart);
             this.Controls.Add(this.lblVersion);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lbCounter);
             this.Controls.Add(this.lblsystemtimevalue);
             this.Controls.Add(this.lblsystemtimestring);
@@ -495,7 +494,6 @@ namespace Marconi
             ((System.ComponentModel.ISupportInitialize)(this.pictindividualrecall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictgeneralrecall)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panelStart.ResumeLayout(false);
             this.panelStart.PerformLayout();
             this.ResumeLayout(false);
